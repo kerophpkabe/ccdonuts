@@ -14,7 +14,7 @@
     <title>C.C.Donuts-shopingsite</title>
 </head>
 <?php
-$pdo = new PDO('mysql:host=localhost;dbname=ccdonuts;charset=utf8', 'ccStaff', 'ccDonuts');
+$pdo = new PDO('mysql:host=localhost;dbname=kabe0701_ccdonuts;charset=utf8', 'kabe0701_ccstaff', 'ccDonuts');
 $id = [];$name = [];$price = [];$int = [];$new = [];
 foreach ($pdo->query('select * from products') as $row) {
     $id[$row['id']] = $row['id'];

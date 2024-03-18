@@ -4,7 +4,7 @@
     <section class="topIvent">
         <div class="top2ImageBox">
             <?php
-                    $pdo = new PDO('mysql:host=localhost;dbname=ccdonuts;charset=utf8', 'ccStaff', 'ccDonuts');
+                    $pdo = new PDO('mysql:host=localhost;dbname=kabe0701_ccdonuts;charset=utf8', 'kabe0701_ccstaff', 'ccDonuts');
                     $sql=$pdo->query('select * from products');
                     foreach ($sql as $index => $row) {
                         if ($index >= 4 && $index <= 4) {
