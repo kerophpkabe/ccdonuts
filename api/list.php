@@ -13,7 +13,6 @@
                 </div>
                 <div class="baseBlock">
                 <?php
-                    $pdo = new PDO('mysql:host=localhost;dbname=ccdonuts;charset=utf8', 'ccStaff', 'ccDonuts');
                     if (isset($_REQUEST['keyword'])) {
                         $sql=$pdo->prepare('select * from products where name like ?');
                         $sql->execute(['%'.$_REQUEST['keyword'].'%']);
@@ -50,7 +49,6 @@
                 </div>
             <div class="baseBlock">
             <?php
-                    $pdo = new PDO('mysql:host=localhost;dbname=ccdonuts;charset=utf8', 'ccStaff', 'ccDonuts');
                     if (isset($_REQUEST['keyword'])) {
                         $sql=$pdo->prepare('select * from products where name like ?');
                         $sql->execute(['%'.$_REQUEST['keyword'].'%']);
